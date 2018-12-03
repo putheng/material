@@ -1,0 +1,35 @@
+<style>
+strong.running {
+    background-repeat: no-repeat;
+    background-image: url(https://static.c9.io/nc-3.1.4302-d07a24d5/static/plugins/c9.ide.layout.classic/images/running_flat_light@2x.png);
+    background-size: 225px 15px;
+    animation: rotation 0.3s infinite steps(16);
+    height: 15px;
+    width: 15px;
+    right: -10px;
+    top: 6px;
+    z-index: 10;
+    display: block;
+  -webkit-animation: spinner-fade 1s infinite linear;
+          animation: spinner-fade 1s infinite linear;
+}
+
+@-webkit-keyframes spinner-fade {
+  0% {
+     transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes spinner-fade {
+  0% {
+     transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+</style>
+<strong class="running"></strong>
